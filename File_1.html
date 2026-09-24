@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Банковский счёт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="account-card">
+    <h1 class="account-card__title">Счёт: Иван</h1>
+    <div class="account-card__balance" id="balance">1000.00 ₽</div>
+
+    <div class="account-card__controls">
+      <input
+        type="number"
+        id="amount"
+        class="account-card__input"
+        placeholder="Сумма"
+        min="1"
+      >
+      <button class="account-card__button btn--deposit"  id="depositBtn">+</button>
+      <button class="account-card__button btn--withdraw" id="withdrawBtn">−</button>
+    </div>
+
+    <ul class="account-card__history" id="history"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

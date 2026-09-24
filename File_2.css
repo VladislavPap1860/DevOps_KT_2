@@ -1,0 +1,77 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6fb;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.account-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.account-card__title {
+  margin: 0 0 16px;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.account-card__balance {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2f4bd8;
+  margin-bottom: 16px;
+}
+
+.account-card__controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.account-card__input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.account-card__button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn--deposit  { background: #2ecc71; }
+.btn--deposit:hover  { background: #27ae60; }
+.btn--withdraw { background: #e63946; }
+.btn--withdraw:hover { background: #c92c39; }
+
+.account-card__history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.account-card__history li {
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  background: #f0f2f8;
+  font-size: 0.95rem;
+}
+
+.history--plus  { color: #1e8449; }
+.history--minus { color: #b71c2c; }
