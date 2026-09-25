@@ -62,6 +62,11 @@ function Vlad_is_cool() {
   
 }
 
+function Vlad_is_very_cool() {
+  alert("Владос - очень крутой!")
+  
+}
+
 document.getElementById("depositBtn")
   .addEventListener("click", () => handle("deposit"));
 
